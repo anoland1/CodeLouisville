@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=League+Script');
+
 /* =================================
   Base Element Styles
 ==================================== */
@@ -6,25 +9,8 @@
 	box-sizing: border-box;
 }
 
-body {
-	line-height: 1.6;
-	color: #3a3a3a;
-}
-
-p {
-	font-size: .95em;
-	margin-bottom: 1.8em;
-}
-
-h1 {
-		font-size: 50px;
-		text-transform: uppercase;
-		padding: 10px 0 0 15px;
-		color: #555;
-}
-
 h2 {
-	color: #C0C0C0;
+	color: #800000;
 	font-weight: lighter;
 	font-size: 1.2em;
 	text-transform: uppercase;
@@ -42,7 +28,10 @@ img {
 figure {
 	margin: 0;
 	line-height: 0;
-  position: relative;
+}
+
+body {
+	background: #fff;
 }
 
 /* =================================
@@ -52,75 +41,64 @@ figure {
 /* ---- Navigation ---- */
 
 .name {
-	font-size: 1.25em;
-	margin: 0;
+	font-size: 2.5em;
+	position: absolute;
+	top: 5px;
+	font-family: "League Script", cursive;
+	font-weight: bolder;
+	color: #000;
 }
 
 .main-nav {
 	margin-top: 5px;
+	float: right;
 }
 
 	.name a {
 		display: block;
 		text-align: center;
-		padding: 5px 10px;
-	}
-
-	.main-nav {
-		float: right;
 	}
 
 	.main-nav li {
 		display: inline-block;
 		margin-left: 5px;
-		margin-top: 5px;
+		margin-top: 15px;
 	}
 
 	.main-nav a {
 		font-size: .95em;
-		color: #3acec2;
+		color: #800000;
 		text-transform: uppercase;
 		text-align: center;
-		padding: 5px 10px;
+		padding: 0 10px;
 	}
 
 	.main-nav a:hover {
-		color: #093a58;
-	}
-
-	ul li.selected {
-		background: #fff;
+		color: #000;
 	}
 
 	ul li.selected a {
-		color: #384047;
+		color: #000;
+		font-weight: bold;
 	}
 
 	select {
-		width: 94%;
-		margin: 11px  0 11px 2%;
-		float: left;
+		width: 150px;
+		margin: 20px  0 0 2%;
 	}
 
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-  box-shadow: 0 1px 4px rgba(0,0,0,.4);
+	padding-top: 22px;
+	padding-bottom: 17px;
+  box-shadow: 0 2px 1px rgba(0,0,0,.7);
+	background: #deb887;
 }
 
-.banner,
 .main-footer {
 	text-align: center;
-}
-
-.banner {
-	color: #fff;
-	background: #3acec2;
-	padding: 3.2em 0;
-	margin-bottom: 60px;
 }
 
 .col {
@@ -129,31 +107,105 @@ figure {
 }
 
 .main-footer {
-	background: #d9e4ea;
+	background: #deb887;
 	padding: 2em 0;
 	margin-top: 30px;
 	font-size: .8em;
 	border-top: 2px outset #000;
 	height: 100%;
-	box-shadow: 0px 500px 0px 500px #d9e4ea;
+	box-shadow: 0px 500px 0px 500px #deb887;
 }
 
-/* ---- Page Elements ---- */
-
-.logo {
-	width: 190px;
+#menutitle {
+	margin: 40px auto 0 auto;
+	width: 100%;
+	text-align: center;
+	color: #000;
 }
 
-.headline {
-	margin-bottom: 0;
+.beer {
+	font-size: 1em;
+	width: 100%;
+	padding: 10px 10px;
+	display: inline-block;
 }
 
-.icon-location {
-  width: 35px;
-  position: absolute;
-  top: -15px;
-  right: -15px;
+#beerlist ul {
+	width: 90%;
+	margin: 0 auto;
+	color: #800000;
 }
+
+#beerlist ul div {
+	position: relative;
+	border-bottom: 1px solid grey;
+}
+
+.orderbutton {
+	background: #800000;
+	box-shadow: 0 1px 0 0 #000;
+	color: #fff;
+	text-shadow: 0 0px #000;
+	border-radius: 6px;
+	width: 140px;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	z-index: 1;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.itemselected {
+	background-color: #faebd7;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
+
+.itemselected .orderbutton {
+	visibility: visible;
+}
+
+#purchaseOrder {
+	width: 250px;
+	height: 400px;
+	margin: 40px auto 0 auto;
+	background-color: #faebd7;
+	border: 1px solid #aaa;
+	border-radius: 8px;
+	text-align: center;
+}
+
+#purchaseOrder #selectedItem {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#purchaseOrder #selectedPrice,
+#purchaseOrder #selectedTax,
+#purchaseOrder #selectedTotal {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: green;
+}
+
+#purchaseOrder .confirmOrder {
+	background: black;
+	box-shadow: 0 1px 0 0 #fff;
+	color: #fff;
+	text-shadow: 0 0px #888;
+	border-radius: 6px;
+	width: 150px;
+	height: 30px;
+}
+
+
+.hidden {
+	display: none;
+}
+
 
 /* =================================
   Media Queries
@@ -175,7 +227,6 @@ figure {
 	}
 	.main-header {
 		position: fixed;
-		background-color: #fff;
 		width: 100%;
 		top: 0;
 		z-index: 1;
@@ -204,7 +255,6 @@ figure {
 
   .main-header {
     position: fixed;
-    background-color: #fff;
     width: 100%;
     top: 0;
     z-index: 1;

@@ -22,11 +22,33 @@
 		</div>
 	</header><!--/.main-header-->
 
+
+<div id="beerlist">
+<ul>
+	<div id="menutitle"><h3>Beer</h3></div>
+	<div id="stellaDiv"><li class="beer" id="Stella"></li><button class='orderbutton invisible'>Order</button></div>
+	<div id="budDiv"><li class="beer" id="Budweiser"></li><button class='orderbutton invisible'>Order</button></div>
+	<div id="heinekenDiv"><li class="beer" id="Heineken"></li><button class='orderbutton invisible'>Order</button></div>
+	<div id="michelobDiv"><li class="beer" id="Michelob"></li><button class='orderbutton invisible'>Order</button></div>
+</ul>
+</div>
+
+<div id="purchaseOrder" class="hidden">
+	<p id="selectedItem"></p>
+	<p id="selectedPrice"></p>
+	<p id="selectedTax"></p>
+	<p id="selectedTotal"></p>
+	<button type="button" class="confirmOrder">Confirm Order</button>
+</div>
+
 	<footer class="main-footer">
+		<div id="bartab"></div><br>
 		<span>(c) 2017 LA SOURCE BAR AND BISTRO</span>
 	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/time.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bartab.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
