@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/selectors.css">
+	<link rel="stylesheet" href="css/menustyles.css">
 </head>
 <body>
 
@@ -22,11 +23,65 @@
 		</div>
 	</header><!--/.main-header-->
 
+<div class="clearfix">
+<div id="menulist">
+	<div class="menucol one">
+	<ul>
+	<div id="menutitle"><h3>Cocktails</h3></div>
+	<div><li class="menuitem" id="volcano"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Budweiser"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Heineken"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Michelob"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+</ul></div>
+	<div class="menucol two">
+	<ul>
+	<div id="menutitle"><h3>Bourbon</h3></div>
+	<div><li class="menuitem" id="woodford_double"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="michters"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="makers"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="pappy_23"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="rowans_creek"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Budweiser"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Heineken"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Michelob"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+</ul></div>
+	<div class="menucol three">
+	<ul>
+	<div id="menutitle"><h3>Scotch</h3></div>
+	<div><li class="menuitem" id="Stella"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Budweiser"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Heineken"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Michelob"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+</ul></div>
+	<div class="menucol four">
+	<ul>
+	<div id="menutitle"><h3>Mixed Drinks</h3></div>
+	<div><li class="menuitem" id="Stella"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Budweiser"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Heineken"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+	<div><li class="menuitem" id="Michelob"></li><button type='button' class='orderbutton invisible'>Order</button></div>
+</ul></div>
+</div>
+</div>
+
+<div id="purchaseOrder" class="hidden">
+	<p id="selectedItem"></p>
+	<button type="button" class="quantity" id="quantitydown">-</button><button type="disabled" class="quantity" id="quantity">1</button><button type="button" class="quantity" id="quantityup">+</button>
+	<p id="selectedPrice"></p>
+	<p id="selectedTax"></p>
+	<p id="selectedTotal"></p>
+	<button type="button" class="confirmOrder">Confirm Order</button>
+	<button type="button" class="cancelOrder">Cancel Order</button>
+</div>
+
 	<footer class="main-footer">
+		<div id="bartab"></div><br>
 		<span>(c) 2017 LA SOURCE BAR AND BISTRO</span>
 	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/menu-liquor.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bartab.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
