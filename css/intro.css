@@ -4,9 +4,6 @@ body {
 .swipe {
   border: 5px solid #e1dfbe;
   width: 200px;
-  margin: 100px auto 20px;
-  border-radius: 5px;
-  padding: 20px 10px;
   text-align: center;
   font-size: 32px
 }
@@ -26,4 +23,11 @@ body {
 
 .rounded {
   border-radius: 50%;
+}
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .625em 1.25em;
+	background: #3acec2;
+	border-radius: .35em;
 }
