@@ -4,7 +4,7 @@ README - Andrew Noland Front End Web Development Project
 
 This is a menu and ordering system for a restaurant/bar
 
-The purpose of this project is to create a system that allows patrons to order food and drinks from their seats without contacting a server.  This will reduce wait times for the customers.
+The purpose of this project is to create a system that allows patrons to order food and drinks from their seats without contacting a server.  This will reduce wait times for the customers.  You can "order" an item by clicking it on the menu.
 
 The prices for the menu items also change every few seconds based on what time of day and day of the week it is.  During popular times prices are higher.  Some of the prices are taken out to 3 decimals on the menu in this project solely for demonstration purposes show them changing.
 
